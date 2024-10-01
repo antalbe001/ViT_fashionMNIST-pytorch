@@ -1,15 +1,11 @@
 import os
-import random
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import torch.utils.data as data
 import torchvision
-import numpy as np
-import matplotlib.pyplot as plt
-from datetime import datetime
-from tqdm.notebook import tqdm_notebook
+
 
 
 def img_to_patch(x, patch_size, flatten_channels=True):
